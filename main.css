@@ -1,0 +1,474 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("/image/back2.png");
+    background-size: 100%;
+}
+
+.div-nav {
+    width: 100%;
+    background-color: #53ff3f;
+}
+
+.div-nav{
+    position: sticky;
+    top: 0%;
+    left: 0;
+    z-index: 2;
+}
+
+.container-curto {
+    width: 100%;
+    height: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: rgb(16, 223, 16);
+}
+
+nav {
+    background-color: #53ff3f;
+}
+
+.h1-nutribot {
+    color: white;
+}
+
+.navbar-nav a {
+    color: white;
+}
+
+.nav-item a:hover{
+    color: rgb(3, 51, 3);
+    transition: 0.5s;
+}
+
+.nav-item a:not(:hover) {
+    transition: 0.5s;
+}
+
+.home-h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.heigth-container {
+    height: 73vh;
+    width: 100%;
+}
+
+.page1 {
+    height: 95vh;
+    width: 100%;
+}
+
+.page2 {
+    width: 100%;
+    height: 100vh;
+}
+
+.page3 {
+    width: 100%;
+    height: 165vh;
+}
+
+.page4 {
+    height: 125vh;
+    width: 100%;
+}
+
+.page5 {
+    height: 150vh;
+}
+
+.h2-sobre {
+    margin-bottom: 40px;
+    text-shadow: 0px 0px 10px green;
+}
+
+.carousel-inner {
+    height: 75vh;
+}
+
+.nav-link {
+    margin-right: 10px;
+}
+
+.sobre-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(26, 202, 26);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sobre-container img {
+    margin-right: 70px;
+}
+
+.sobre-container h3 {
+    color: white;
+}
+
+.h2-tmb {
+    margin-bottom: 40px;
+    text-shadow: 0px 0px 10px green;
+}
+
+.article-tmb-div article p {
+    margin-inline: 40px;
+}
+
+.nutribot-span {
+    color:rgb(12, 163, 12);
+    text-shadow: 0px 0px 10px rgb(2, 249, 2);
+}
+
+.caixa-verde {
+    background-color: rgb(26, 202, 26);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.h3-calculo-tmb {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.h3-oque-e-tmb {
+    margin: 40px;
+}
+
+.article-tmb p {
+    font-size: 20px;
+    margin-inline: 100px;
+    color: white;
+}
+
+.form-calculo input {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 8px;
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.form-calculo {
+    width: 30%;
+}
+
+.button-tmb {
+    border: solid 1px black;
+    padding: 5px;
+    padding-inline: 25px;
+    margin-top: 4px;
+    border-radius: 10px;
+}
+
+#homem {
+    float: right;
+}
+
+#mulher {
+    float: right;
+}
+
+.h-input {
+    height: 15px;
+}
+
+.m-input {
+    height: 15px;
+}
+
+.article-imc p {
+    font-size: 20px;
+    margin-inline: 100px;
+    color: white;
+}
+
+.calculo-imc-h3 {
+    margin: 40px;
+}
+
+.h2-imc {
+    margin-bottom: 40px;
+    text-shadow: 0px 0px 8px green;
+}
+
+.h3-calculo-imc {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.form-calculo div {
+    border-radius: 10px;
+    padding: 8px;
+    width: 100%;
+    float: bottom;
+    margin-bottom: 15px;
+}
+
+.div-form-imc form {
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+}
+
+.div-imc {
+    background-color: red;
+}
+
+.form-calculo-imc input {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 8px;
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.form-calculo-imc {
+    width: 30%;
+}
+
+.form-calculo-imc-div div {
+    border-radius: 10px;
+    padding: 8px;
+    width: 100%;
+    float: bottom;
+    margin-bottom: 15px;
+}
+
+.form-calculo-imc {
+    margin-bottom: 30px;
+}
+
+.h2-dieta {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-shadow: 0px 0px 8px green;
+}
+
+.h3-dieta {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.p-dieta {
+    color: white;
+}
+
+.article-dieta p {
+    font-size: 20px;
+    margin-inline: 100px;
+    color: white;
+}
+
+.form-input-dieta {
+    margin-bottom: 30px;
+}
+
+.dieta-tmb-div div {
+    border-radius: 10px;
+    padding: 8px;
+    width: 100%;
+    float: bottom;
+    margin-bottom: 15px;
+}
+
+.form-dieta-tmb input {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 8px;
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.form-dieta-tmb {
+    width: 20%;
+}
+
+.form-calculo-imc {
+    margin-bottom: 30px;
+}
+
+.accordion {
+    margin-left: 100px;
+    padding-bottom: 10px;
+}
+
+.form-container-dieta form input,
+.form-container-dieta form label {
+    display: block;
+}
+
+.form-container-dieta form input {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 8px;
+    width: 60%;
+    display: block;
+    margin-bottom: 15px;
+}
+.form-container-dieta button {
+    border: solid 1px black;
+    padding: 5px;
+    padding-inline: 25px;
+    margin-top: 4px;
+    border-radius: 10px;
+    background-color: rgb(5, 196, 5);
+    color: white;
+    box-shadow: 0px 0px 2px black;
+}
+
+@media screen and (max-width: 1500px){
+    .page1 {
+        height: 90vh;
+    }
+}
+
+
+@media screen and (max-width: 1412px) {
+    .page1 {
+        height: 70vh;
+    }
+    
+    .page2 {
+        height: 210vh;
+    }
+
+    .sobre-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sobre-container img {
+        margin-right: 0px;
+        height: 50%;
+        width: 100%;
+    }
+
+    .sobre-h3 {
+        font-size: 21px;
+        padding-inline: 60px;
+    }
+
+    .carousel-inner {
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width: 1212px){
+    
+    .page1 {
+        height: 70vh;
+    }
+    
+    .page2 {
+        height: 180vh;
+    }
+
+    .sobre-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sobre-container img {
+        margin-right: 0;
+    }
+
+    .sobre-h3 {
+        font-size: 21px;
+        padding-inline: 60px;
+    }
+
+}
+
+@media screen and (max-width: 1028px){
+    .page1 {
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .page2 {
+        height: 200vh;
+    }
+
+    .page3 {
+        height: 280vh;
+    }
+
+    .page4 {
+        height: 255vh;
+    }
+
+    .page5 {
+        height: 250vh;
+    }
+
+    .carousel-inner {
+        height: 35vh;
+    }
+}
+
+@media screen and (max-width: 558px){
+    .page1 {
+        height: 50vh;
+    }
+
+    .page3 {
+        height: 265vh;
+    }
+
+    .page4 {
+        height: 230vh;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .page3 {
+        height: 240vh;
+    }
+
+    .page4 {
+        height: 200vh;
+    }
+
+    .page5 {
+        height: 230vh;
+    }
+
+    .article-dieta p {
+        margin-inline: 0px;
+    }
+
+    .article-imc p {
+        margin-inline: 0px;
+    }
+
+    .article-tmb p {
+        margin-inline: 0px;
+    }
+}
+
+@media screen and (max-width: 444px){
+    .page2 {
+        height: 220vh;
+    }
+}
+
+@media screen and (max-width: 444px){
+    .page2 {
+        height: 240vh;
+    }
+}

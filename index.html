@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriBot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="div-nav">
+        <div class="container navegador">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><h1 class="h1-nutribot">NutriBot</h1></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#secao2"><h3 class="display-4" style="font-size: 19px;">Sobre</h3></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#secao3"><h3 class="display-4" style="font-size: 19px;">Taxa Metebólica</h3></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#secao4"><h3 class="display-4" style="font-size: 19px;">IMC</h3></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#secao5"><h3 class="display-4" style="font-size: 19px;">Monte sua dieta</h3></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <section id="secao1" class="page1">
+        <h2 class="home-h2 d-flex justify-content-center">Seja Bem-Vindo ao&nbsp;<span class="nutribot-span">NutriBot</span></h2>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="/image/1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="/image/2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="/image/3.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <section id="secao2" class="page2">
+        <div class="container">
+            <h2 class="h2-sobre d-flex justify-content-center">Sobre</h2>
+            <div class="sobre-container">
+                <img id="img-pessoas" src="/image/integrantes-site.png" alt="placeholder">
+                <h3 class="sobre-h3">Somos um grupo de Universitários da Faculdade Metropolitana de Manaus (FAMETRO), e nos como estudantes do curso de Engenharia de Software, tivemos a ideia de criar o NutriBot, um projeto que une tecnologia e nutrição para ajudar pessoas a melhorar seus hábitos alimentares. Nosso objetivo é fornecer informações confiáveis sobre dieta e nutrição por meio de um site interativo, trazendo a expertise do nosso curso para um campo que impacta diretamente a saúde e o bem-estar das pessoas. Com o NutriBot, queremos tornar mais fácil o acesso a orientações sobre alimentação saudável, além de oferecer dicas e recursos para uma vida mais equilibrada.</h3>
+            </div>
+        </div>
+    </section>
+    <section class="page3" id="secao3">
+        <div class="container">
+            <h2 class="h2-tmb d-flex justify-content-center">Calculo de TMB</h2>
+            <div class="caixa-verde">
+                <div class="article-tmb-diz">
+                    <article class="article-tmb">
+                        <h3 class="h3-oque-e-tmb d-flex justify-content-center">Oque é TMB?</h3>
+                        <p class="d-flex justify-content-center">A taxa metabólica basal (TMB) é a quantidade de energia que o corpo precisa para manter as funções vitais ao longo de 24 horas, medida em calorias. Essa energia é proveniente dos macronutrientes consumidos, como carboidratos, proteínas e gorduras. O valor da TMB varia conforme fatores como idade, sexo, hormônios e características genéticas. Geralmente, homens têm uma TMB mais alta do que mulheres devido a um maior percentual de massa muscular. A TMB é uma parte do gasto energético total, que também inclui a energia usada em atividades físicas e outras tarefas do dia a dia.</p>
+                        <br>
+                    </article>
+                </div>
+                <h3 class="h3-calculo-tmb justify-content-center d-flex">Calcule seu TMB</h3>
+                <div class="d-flex justify-content-center tmb-calculo-div">
+                    <form id="form-tmb" class="form-calculo">
+                        <div>
+                            <label for="homem">
+                                Homem<input class="h-input" name="sexo" id="homem" type="radio" value="homem">
+                            </label>
+                            <label for="mulher">
+                                Mulher<input class="m-input" name="sexo" id="mulher" type="radio" value="mulher">
+                            </label>
+                        </div>
+                        <label for="nome">Nome:</label>
+                        <input required name="nome" class="nome-input" type="text" id="nome" placeholder="nome">
+                        <label for="peso">Peso</label>
+                        <input class="peso-input" type="number" name="peso" id="peso" placeholder="peso (em kg)">
+                        <label for="altura">Altura:</label>
+                        <input required name="altura" class="altura-input" type="number" id="altura" placeholder="altura (em cm)">
+                        <label for="idade">Idade:</label>
+                        <input required name="idade" class="idade-input" type="number" id="idade" placeholder="idade">
+                        <button class="button-tmb" type="submit">Enviar</button>
+                        <div class="d-block justify-content-center" id="resposta-calculo">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page4" id="secao4">
+        <div class="container">
+            <h2 class="h2-imc d-flex justify-content-center">IMC</h2>
+            <div class="caixa-verde">
+                <article class="article-imc">
+                    <h3 class="calculo-imc-h3 d-flex justify-content-center">Oque é calculo de IMC</h3>
+                    <p>O Índice de Massa Corporal (IMC) é uma medida que ajuda a avaliar se uma pessoa está com peso saudável em relação à sua altura. Ele é calculado dividindo o peso da pessoa pelo quadrado de sua altura. Com essa medida, é possível identificar se uma pessoa está abaixo do peso, com peso normal, com sobrepeso ou com obesidade. É uma ferramenta útil para entender se o peso de uma pessoa pode representar um risco à saúde, mas não leva em consideração fatores como a composição corporal (músculos, gordura, ossos) ou a distribuição de gordura no corpo.
+                    Apesar de ser uma medida simples, é sempre bom lembrar que ela é apenas uma parte de uma avaliação mais abrangente de saúde e não deve ser usada como único indicador para diagnóstico ou tratamento médico.</p>
+                </article>
+                <h3 class="h3-calculo-imc d-flex justify-content-center">Calcule seu IMC</h3>
+                <div class="d-flex justify-content-center tmb-calculo-imc-div">
+                    <form id="form-imc" class="form-calculo-imc">
+                        <label for="peso">Peso</label>
+                        <input class="peso-input" type="number" name="peso" id="peso-imc" placeholder="peso (em kg)">
+                        <label for="altura">Altura:</label>
+                        <input required min="0" step="0.01" name="altura" class="altura-input" type="number" id="altura-imc" placeholder="altura (em cm)">
+                        <button class="button-tmb" type="submit">Enviar</button>
+                        <div class="d-block justify-content-center" id="resposta-calculo-imc">
+                        </div>
+                    </form>
+                </div>
+            </div>  
+        </div>
+    </section>
+    <section id="secao5" class="page5">
+        <div class="container">
+            <h2 class="h2-dieta d-flex justify-content-center">Dieta</h2>
+            <div class="caixa-verde">
+                <article class="article-dieta">
+                    <h3 class=" h3-dieta d-flex justify-content-center">Você sabe montar a sua dieta?</h3>
+                    <p class="d-flex justify-content-center">
+                        Criar uma dieta personalizada é um passo importante para alcançar seus objetivos de saúde e bem-estar. Nesta seção, oferecemos ferramentas e orientações para ajudar você a construir um plano alimentar adaptado às suas necessidades individuais, considerando seus gostos, estilo de vida, metas de saúde e nível de atividade física.<br>
+                        
+                        Com uma dieta bem planejada, você pode manter um peso saudável, pois comer os alimentos certos na quantidade certa ajuda a prevenir obesidade. Além disso, uma alimentação equilibrada fornece os nutrientes necessários para manter sua energia ao longo do dia e para atividades físicas, além de ajudar a reduzir o risco de doenças crônicas, como diabetes, doenças cardíacas e câncer.</p>
+                </article>
+                <div class="row">
+                    <div class="col-8">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                                    Café Da Manhã
+                                </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                    <div class="accordion-body" id="div-cafedamanha">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    Lanche
+                                </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                    <div class="accordion-body" id="div-lanche">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    Almoço
+                                </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                    <div class="accordion-body" id="div-almoco">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                                    Lanche da tarde
+                                </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                                    <div class="accordion-body" id="div-lanchedatarde">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                                    janta
+                                </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                                    <div class="accordion-body" id="div-janta">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                                    Lanche da noite
+                                </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
+                                    <div class="accordion-body" id="div-lanchedanoite">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-container-dieta">
+                            <form id="form-dieta">
+                                <label for="alimento">Alimento
+                                    <input required style="padding: 3px;" id="alimento" type="text" placeholder="ex:frango">
+                                </label>
+                                <label for="quantidade">Quantidade:
+                                    <input min="0" required style="padding: 3px;" id="quantidade" type="number" placeholder="quantidade(g)">
+                                </label>
+                                <label for="calorias">Calorias:
+                                    <input min="0" required style="padding: 3px;" id="calorias" type="number" placeholder="kcal">
+                                </label>
+                                <button type="submit" class="add-button" id="add-button">Adicionar+</button>
+                                <div class="btn-primary btn-group-vertical" role="group" aria-label="Vertical radio toggle button group">
+                                    <input required value="cafedamanha" type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off">
+                                    <label style="color: white;" class="btn btn-outline-danger" for="vbtn-radio1">Café da Manhã</label>
+                                    <input required value="lanche" type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2" autocomplete="off">
+                                    <label style="color: white;" class="btn btn-outline-danger" for="vbtn-radio2">Lanche</label>
+                                    <input required value="almoco" type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3" autocomplete="off">
+                                    <label style="color: white;" class="btn btn-outline-danger" for="vbtn-radio3">Almoço</label>
+                                    <input required value="lanchedatarde" type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio4" autocomplete="off">
+                                    <label style="color: white;" class="btn btn-outline-danger" for="vbtn-radio4">Lanche da Tarde</label>
+                                    <input required value="janta" type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio5" autocomplete="off">
+                                    <label style="color: white;" class="btn btn-outline-danger" for="vbtn-radio5">Janta</label>
+                                    <input required value="lanchedanoite" type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio6" autocomplete="off">
+                                    <label style="color: white;" class="btn btn-outline-danger" for="vbtn-radio6">Lanche da Noite</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/js/jquery.mask.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
